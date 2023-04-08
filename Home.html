@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+    <!-- -----------------header start ---------------------------------- -->
+    <header class="" id="header">
+        <section id="header-section">
+            <div id="logo">
+                <img src="./pictures/LOGO.png" alt="Logo" id="header-logo">
+            </div>
+
+            <nav class="nav-menu" id="nav-menu-header">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="./Register-now.html">Contact</a></li>
+            </nav>
+
+            <div class="header-button">
+                <button id="nav-button">Register Now</button>
+            </div>
+        </section>
+
+    </header>
+
+    <!-- on scroll glassmorphism effect -->
+    <script>
+        // document.getElementById("header").className = "";        
+        window.onscroll = function () { glassmorphism() };        
+        function glassmorphism() {
+            if (document.documentElement.scrollTop >= 90) {
+                document.getElementById("header").className = "glassmorphism";
+            }
+            else{
+                document.getElementById("header").className = "";
+            }            
+        }
+    </script>
+    <!------------------------------------- Header ends ---------------------------- -->
+    <section id="hero-section">
+        <div id="hero-section-width">
+            <div id="left-column">
+                <h4>WELCOME TO BIRENDRA MULTIPLE CAMPUS</h4>
+                <h1>Best College in Chitwan <br> for IT</h1>
+                <div>
+                    <button id="hero-button1" class="buttonWithOrangeBackground">Enroll Now</button>
+                    <button>View Courses</button>
+                </div>
+
+            </div>
+            <div id="right-column">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="about-section">
+        <div id="facilities-section">
+            <div class="facilities-items">
+                
+                <img src="./pictures/teacher.svg" alt="teacher-icon" class="facilities-icon">
+                <h4 class="facilities-title">Certified Teacher</h4>
+                <p class="paragaph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            </div>
+            <div class="facilities-items">
+                <img src="./pictures/settings.svg" alt="education-icon" class="facilities-icon">
+                <h4 class="facilities-title">Special Education</h4>
+                <p class="paragaph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="facilities-items">
+                <img src="./pictures/open-book.svg" alt="book-icon" class="facilities-icon">
+                <h4 class="facilities-title">Book & Library</h4>
+                <p class="paragaph">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+
+            <div class="facilities-items" id="last-facilities">
+                <img src="./pictures/football.svg" alt="sports-icon" class="facilities-icon">
+                <h4 class="facilities-title">Sports Clubs</h4>
+                <p class="paragaph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div id="about-us">
+            <div>
+                <div id="about-image"></div>
+                <h3>A Few Words About</h3>
+                <h4 id="about-sub-title">Birendra Multiple Campus</h4>
+                <hr class="horizontal-line">
+                <p id="about-us-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic neque nisi quis
+                    omnis modi? Dignissimos impedit at quis, aut quia, assumenda, nesciunt ut vero expedita temporibus
+                    tenetur molestiae minima dolorum.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eaque minus quas, architecto vel suscipit
+                consequatur quod molestias placeat, expedita qui quaerat temporibus quis ipsam dignissimos culpa
+                doloribus sed ad?</p>
+
+        </div>
+
+        <div id="mission-section">
+
+            <div id="first-mission-container">
+                <div id="first-mission-description">
+
+                    <img src="./pictures/mission.svg" alt="mission-icon" id="mission-icon">
+                    <div>
+                        <h2>Our Mission</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat fugit iste qui commodi
+                            nostrum libero? Eius ea iure esse mollitia aspernatur voluptate? Esse culpa animi amet
+                            voluptate? Quidem, optio.</p>
+                    </div>
+
+                </div>
+                <img src="./pictures/file-20221213-18915-z6pe3e.jpg" alt="img" id="first-mission-img">
+            </div>
+
+
+            <div id="last-mission-container">
+
+                <img src="./pictures/rut-miit-JY9bBAcs0vs-unsplash.jpg" alt="students-image" id="last-mission-img">
+                <div class="mission-description" id="mission-description-second">
+                    <div id="mission-second-description-container">
+                        <img src="./pictures/right-quotation-mark.svg" alt="" id="mission-symbol">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiat fugit iste qui commodi
+                            nostrum libero? Eius ea iure esse mollitia aspernatur voluptate? Esse culpa animi amet
+                            voluptate? Quidem, optio.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="programs">
+        <h4>Find Your Desired IT Course</h4>
+        <h2>Featured Courses</h2>
+        <hr>
+
+        <div id="courses">
+            <div class="course-contianer">
+                <h4 class="course-title">Course Title</h4>
+                <p class="paragaph">Ex facere eos perferendis sapiente, maxime dolore soluta atque temporibus sint,
+                    voluptates libero. Doloremque quia tempora quasi vel, quos odio.</p>
+                <button class="course-button">&#8594</button>
+            </div>
+            <div class="course-contianer">
+                <h4 class="course-title">Course Title</h4>
+                <p class="paragaph">Ex facere eos perferendis sapiente, maxime dolore soluta atque temporibus sint,
+                    voluptates libero. Doloremque quia tempora quasi vel, quos odio.</p>
+                <button class="course-button">&#8594</button>
+            </div>
+            <div class="course-contianer">
+                <h4 class="course-title">Course Title</h4>
+                <p class="paragaph">Ex facere eos perferendis sapiente, maxime dolore soluta atque temporibus sint,
+                    voluptates libero. Doloremque quia tempora quasi vel, quos odio.</p>
+                <button class="course-button">&#8594</button>
+            </div>
+            <div class="course-contianer">
+                <h4 class="course-title">Course Title</h4>
+                <p class="paragaph">Ex facere eos perferendis sapiente, maxime dolore soluta atque temporibus sint,
+                    voluptates libero. Doloremque quia tempora quasi vel, quos odio.</p>
+                <button class="course-button">&#8594</button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- ------------------Testimonial Container------------------------------------------- -->
+    <section class="testimonial-container">
+        <h4>What Our Students Says About Us!!!</h4>
+        <h2>Testimonials</h2>
+        <!-- <hr> -->
+        <div id="testimonial">
+
+            <div class="testi-container">
+                <div id="relative-testicontent">
+                    <div class="testi-content" id="slide-container">
+                        <div class="slide swiper-slide">
+                            <img src="images/img1.jpg" alt="" id="testimonial-image" />
+                            <p class="paragaph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                                saepe provident dolorem a quaerat quo error facere nihil deleniti
+                                eligendi ipsum adipisci, fugit, architecto amet asperiores
+                                doloremque deserunt eum nemo.
+                            </p>
+                            <h4 id="testimonial-name">Full Name</h4>
+                            <p>Profession</p>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/img1.jpg" alt="" id="testimonial-image" />
+                            <p class="paragaph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                                saepe provident dolorem a quaerat quo error facere nihil deleniti
+                                eligendi ipsum adipisci, fugit, architecto amet asperiores
+                                doloremque deserunt eum nemo.
+                            </p>
+                            <h4 id="testimonial-name">Full Name</h4>
+                            <p>Profession</p>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/img1.jpg" alt="" id="testimonial-image" />
+                            <p class="paragaph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                                saepe provident dolorem a quaerat quo error facere nihil deleniti
+                                eligendi ipsum adipisci, fugit, architecto amet asperiores
+                                doloremque deserunt eum nemo.
+                            </p>
+                            <h4 id="testimonial-name">Full Name</h4>
+                            <p>Profession</p>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/img1.jpg" alt="" id="testimonial-image" />
+                            <p class="paragaph">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                                saepe provident dolorem a quaerat quo error facere nihil deleniti
+                                eligendi ipsum adipisci, fugit, architecto amet asperiores
+                                doloremque deserunt eum nemo.
+                            </p>
+                            <h4 id="testimonial-name">Full Name</h4>
+                            <p>Profession</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next nav-btn" onclick="increment()"> > </div>
+            <div class="swiper-button-prev nav-btn" onclick="decrement()"><</div>
+                <div class="indicator">
+                    <span class="bth active"></span>
+                    <span class="bth"></span>
+                    <span class="bth"></span>
+                    <span class="bth"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const bth = document.getElementsByClassName("bth");
+        const slide = document.getElementById("slide-container");
+        let containerWidth = 0;
+        let a = 0;
+
+        function btnActiveRemove(){
+            if (containerWidth >= -2100) {
+                slide.style.transform = `translatex(${containerWidth}px)`;
+                for (i = 0; i < 4; i++) {
+                    bth[i].classList.remove("active");
+                }
+            }
+            else {
+                containerWidth = 0;
+                slide.style.transform = `translatex(${containerWidth}px)`;
+                for (i = 0; i < 4; i++) {
+                    bth[i].classList.remove("active");
+                }
+            }         
+        }
+
+        bth[0].onclick = function () {
+            a=0;
+            containerWidth = 0;
+            btnActiveRemove();
+            bth[0].classList.add("active");
+        }
+        bth[1].onclick = function () {
+            a=1;
+            containerWidth = -700;
+            btnActiveRemove();
+            bth[1].classList.add("active")
+        }
+        bth[2].onclick = function () {
+            a=2;
+            containerWidth = -1400;
+            btnActiveRemove();
+            bth[2].classList.add("active")
+        }
+        bth[3].onclick = function () {
+            a=3;
+            containerWidth = -2100;
+            btnActiveRemove();
+            bth[3].classList.add("active")
+        }
+
+        function increment() {
+            a++;
+            a = a % 4;
+            if (containerWidth >= -2100) {
+                containerWidth = containerWidth - 700;                
+                btnActiveRemove();
+                bth[a].classList.add("active");
+            }
+            else {
+                containerWidth = 0;                
+                btnActiveRemove();
+                bth[a].classList.add("active");
+            }
+        }
+        function decrement() {
+            if(a>0 || containerWidth < 0){
+                a--;
+                containerWidth = containerWidth + 700;
+                btnActiveRemove();
+                bth[a].classList.add("active");                
+            }
+            else{
+                a=3;
+                containerWidth = -2100;
+                btnActiveRemove();
+                bth[a].classList.add("active");
+            }
+        }
+
+    </script>
+
+    <!-- ----------------testimonial ends---------------------------------------------------- -->
+
+    <!-- ---------------Contact Us section----------------------------------------------- -->
+
+    <section id="contact-us">
+        <div id="main-contact-us-section">
+
+            <div class="contact-columns" id="contact-us-column">
+                <h4>CONTACT</h4>
+                <h3>Get in Touch...</h3>
+
+                <p>We'd love to hear from you! To get in touch with us, please fill out our contact form. We'll get back
+                    to you as soon as possible.</p>
+                <div class="info-subsection">
+                    <img src="./pictures/location.svg" alt="location-icon" class="icon">
+                    <p>Bharatpur-10, Chitwan, Bagmati, Nepal</p>
+                </div>
+                <div class="info-subsection">
+                    <img src="./pictures/envelop.svg" alt="email-icon" class="icon">
+                    <p>dnsadk90@gmial.com</p>
+                </div>
+                <div class="info-subsection">
+                    <img src="./pictures/call.svg" alt="phone-icon" class="icon">
+                    <p>+977 982-7158626</p>
+                </div>
+
+            </div>
+            <div class="contact-columns" id="form-column">
+                <div class="input-container">
+                    <input type="text" name="name" id="name" class="form-field" placeholder="Enter your full name"
+                        required>
+                    <label for="name" class="label">Full Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" id="email" class="form-field" placeholder="example@gmail.coom"
+                        required>
+                    <label for="email" class="label">Email</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="subject" id="subject" class="form-field" placeholder="Enter your subject"
+                        required>
+                    <label for="subject" class="label">Subject</label>
+                </div>
+
+                <div class="input-container">
+
+                    <textarea name="Message" id="Message" cols="30" rows="2" class="form-field"
+                        placeholder="Enter your message" required></textarea>
+                    <label for="Message" class="label" id="message-label">Message</label>
+                </div>
+                <button>Send Message</button>
+                <!-- class="button-in-blue-background" -->
+
+            </div>
+            <div class="contact-columns" id="map-column">
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <footer>
+        <div id="footer-section">
+
+            <img src="./pictures/LOGO.png" alt="Logo" id="footer-logo">
+
+            <div id="nav-column">
+                <h4>Quick Links</h4>
+                <nav class="nav-menu" id="nav-menu-footer">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </nav>
+
+            </div>
+
+            <div id="Useful-Links">
+                <h4>Some Useful Links</h4>
+                <nav class="nav-menu" id="nav-menu-footer">
+                    <li><a href="#">TUIOST</a></li>
+                    <li><a href="#">Birendra</a></li>
+                    <li><a href="#">CSIT</a></li>
+                </nav>
+
+            </div>
+
+            <div>
+                <h4>Contact Information</h4>
+                <div id="contact-column">
+                    <p>phn. no</p>
+                    <p>location</p>
+                </div>
+                <h4>Social Media Links</h4>
+                <div id="social-media-section">
+                    <div class="social-media" id="facebook"></div>
+                    <div class="social-media" id="instagram"></div>
+                    <div class="social-media" id="youtube"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <div id="copyright">
+        <p id="copyright-text">Copyright &#169 2023 | All right reserved by Dinesh Adhikari</p>
+
+    </div>
+
+
+
+</body>
+
+</html>

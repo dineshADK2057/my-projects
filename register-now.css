@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+h1,h2,h3,h4{
+    color: rgb(0,5,31);
+}
+
+button{
+    padding: 12px 24px 12px 24px;
+    border: 2px solid rgb(0,5,31);
+    border-radius: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: rgb(0,5,31);
+}
+button:hover{
+    background-color: rgb(0,5,31);
+    color: white;
+    transition-duration: 0.8s;
+    
+}
+/*-----------------------Header section--------------------------------*/
+header{
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.glassmorphism{
+    background: rgb(0,5,31,0.2);
+    box-shadow: 0 2px 20px 0 rgba( 0, 0, 0, 0.25 );
+    backdrop-filter: saturate(180%) blur( 10px );
+    -webkit-backdrop-filter: saturate(180%) blur( 10px );
+}
+
+#header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 70px;
+    z-index: 10;
+}
+
+/*------------for logo in the header-------------------------*/
+#header-logo{
+    height: 70px;
+    width: auto;
+}
+
+/*-------------------for nav menu---------------------------*/
+a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#nav-menu-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    border-radius: 0 0 24px 24px;
+    width: 50%;
+}
+
+
+#nav-menu-header li a{
+    color: white;
+    padding: 0 8px;
+}
+#nav-menu-header li a:after{
+    content: "";
+    position: absolute;
+    background-color: #ffa100;
+    height: 3px;
+    width: 0; /*------------- Put 100% for centre hover effect-----------------*/
+    left: 0;
+    bottom: -8px;
+    /*transform: scale(0, 1);
+    transition: transform 0.3s ease;*/
+}
+
+#nav-menu-header li a:hover:after{
+    width: 100%;
+    transition: 0.3s;
+    /*transform: scale(1, 1);*/
+}
+/*-----------------nav menu ends------------------------*/
+
+/*----------------------for nav button hover effect-------------------*/
+
+#nav-button{
+    background-color: rgb(225, 225, 225);
+}
+
+#nav-button:hover{
+    border: 2px solid rgb(255,161,0);
+    background-color: rgb(255,161,0);
+    color: white;
+    transition-duration: 0.5s;
+    
+}
+
+
+/*-----------------Header Section ends-------------------------------*/
+
+/*------------------for hero section----------------------------*/
+#hero-section{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("./pictures/birendra.jpg");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+}
+
+
+#hero-section h1, #hero-section p{
+    color: white;
+    margin: 10px 0px;
+
+}
+
+/*-----------------hero section ends------------------------------*/
+
+/*--------------------------for main section-----------------------*/
+
+#main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+    background-color: rgb(225, 225, 225);
+}
+#main-main-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1000px;
+}
+#contact-column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 20px;
+}
+
+
+hr{
+    width: 120px;
+    height: 3px;
+    background-color: #ffa100;
+    border: none;
+    margin: 20px 0 50px 0;
+}
+#number, #email-add{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+#phone{
+    height: 50px;
+    width: auto;
+}
+#envelop{
+    height: 33px;
+}
+
+.vl{
+    height: 50px;
+    border-right: 2px solid rgb(255,161,0);
+    margin: 0 50px 0 30px;  
+} 
+
+/*------------for form section-----------------------*/
+#title-form{
+    margin-bottom: 30px;
+    text-align: center;
+}
+#form-section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    border-radius: 30px;
+    margin-left: 50px; 
+    
+}
+.input-container{
+    width: 300px;
+    position: relative;
+    margin-bottom: 24px;
+}
+.form-field{
+    padding: 18px 24px;
+    border: 2px solid rgb(0,5,31,0.8);
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease-in;
+    background: none;
+}
+.label{
+    position: absolute;
+    top: 17px;
+    left: 24px;
+    transition: all 0.3s ease-in;
+    padding: 0 2px;
+    color: rgb(0,5,31);
+    cursor: text;
+}
+
+.label::before {
+    content: "";
+    height: 5px;
+    position: absolute;
+    top: -17px;
+    left: 0;
+    width: 100%;
+}
+
+.form-field:focus {
+    border: 2px solid #ffa100;
+}
+.form-field::placeholder {
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+.form-field:focus::placeholder{
+    opacity: 1;
+    animation-delay: 0.3s;
+}
+.form-field:focus ~ .label{
+    top: -10px;
+    left: 24px;
+    color: #ffa100;
+    font-size: 14px;
+    background-color: white;
+    padding: 0 4px;
+}
+.form-field:not(:placeholder-shown).form-field:not(focus) ~.label{
+    top: -10px;
+    left: 24px;
+    color: rgb(0,5,31);
+    background-color: white;
+    font-size: 14px;
+    padding: 0 4px;
+}
+
+/*-------------------form end------------------------------------*/
+
+
+#call-to-action-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(255,161,0);
+}
+#call-to-action{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+/*------------------------------footer section starts---------------------------------*/
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    height: 200px;
+}
+#footer-section{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#footer-logo{
+    width: auto;
+    height: 200px;
+}
+#nav-menu-footer li{
+    list-style: none; 
+    margin: 10px 0;
+}
+
+#nav-menu-footer li a:hover{
+    color: #ffa100;
+    
+}
+
+
+#contact-column{
+    margin-bottom: 20px;
+}
+
+#social-media-section{
+    display: flex;
+}
+
+.social-media{
+    width: 30px;
+    height: 30px;
+    background: black;
+    margin-right: 10px;
+}
+
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background: rgb(0,5,31);
+    color: white;
+}
+/*--------------------------------footer ends--------------------------------------*/

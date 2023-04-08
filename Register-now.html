@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+    <link rel="stylesheet" href="/register-now.css">
+
+
+</head>
+<body>
+    <header class="glassmorphism" id="header">
+        <section id="header-section">
+            <div id="logo">
+                <img src="./pictures/LOGO.png" alt="Logo" id="header-logo">
+            </div>
+
+            <nav class="nav-menu" id="nav-menu-header">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="./Register-now.html">Contact</a></li>
+            </nav>
+
+            <div class="header-button">
+                <button id="nav-button">Register Now</button>
+            </div>
+        </section>
+
+    </header>
+    <!-- on scroll glassmorphism effect -->
+    <script>
+        window.onscroll = function () { glassmorphism() };
+
+        function glassmorphism() {
+            if (document.documentElement.scrollTop >= 90) {
+                document.getElementById("header").className = "glassmorphism";
+            }
+            else {
+                document.getElementById("header").className = "";
+            }
+        }
+    </script>
+    <!------------------------------------- Header ends ---------------------------- -->
+
+    <section id="hero-section">
+        <h1>Registration Form</h1>
+        <p>Home  >   Refistration Form</p>
+
+    </section>
+
+
+
+    <div id="main-section">            
+        <div id="main-main-section">                
+                                    
+            <div id="contact-column">
+                <div id="contact-information">
+                    <h2> For Registratin Fill the Form or Contact<br>Us Today</h2>
+                    <hr>
+                    <h4>CONTACT INFORMATION</h4>
+
+                    <div id="number">
+                        <img src="./pictures/call.svg" alt="phone-icon" id="phone">
+                            <div class="vl"></div>
+                        <div>
+                            <p> Call us for any inquiry </p>
+                            <h3>+977 982-7158626</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="email-add">
+                    <img src="./pictures/envelop.svg" alt="envelop-icon" id="envelop">
+                    <div class="vl"></div>
+                    <div>
+                        <p>Emial us at</p>
+                        <h3>dnsadk90@gmail.com</h3>
+                    </div>
+                </div>  
+                
+            </div> 
+            
+            <div id="form-section">
+                <h3 id="title-form">Registration Form</h3>
+                <div class="input-container">
+                    <input type="text" name="name" id="name" class="form-field" placeholder="Enter your full name" required>
+                    <label for="name" class="label">Full Name</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" name="address" id="address" class="form-field" placeholder="Enter your address" required>
+                    <label for="address" class="label">Address</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" name="email" id="email" class="form-field" placeholder="example@gmail.coom" required>
+                    <label for="email" class="label">Email</label>
+                </div>
+                <div class="input-container">
+                    <input type="number" name="phn-number" id="phn-number" class="form-field" placeholder="Phone number" required>
+                    <label for="phn-number" class="label" >Phone No.</label>
+                </div>
+                <button>Register</button>
+                              
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div id="call-to-action-section">
+        <div id="call-to-action">
+            <div id="description">
+                <h3>Looking For Scholarship ??</h3>
+                <p>Fill the Scholarship from..</p>
+            </div>
+            <div id="get-scholarship">
+                <button id="scholarship">Get Scholarship</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-section">
+            
+            <img src="./pictures/LOGO.png" alt="Logo" id="footer-logo">
+            
+            <div id="nav-column">
+                <h4>Quick Links</h4>
+                <nav class="nav-menu" id="nav-menu-footer">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </nav>
+
+            </div>
+
+            <div id="Useful-Links">
+                <h4>Some Useful Links</h4>
+                <nav class="nav-menu" id="nav-menu-footer">
+                    <li><a href="#" >TUIOST</a></li>
+                    <li><a href="#" >Birendra</a></li>
+                    <li><a href="#" >CSIT</a></li>
+                </nav>
+
+            </div>
+
+            <div>
+                <h4>Contact Information</h4>
+                <div id="contact-column">
+                    <p>phn. no</p>
+                    <p>location</p>
+                </div>
+                <h4>Social Media Links</h4>
+                <div id="social-media-section">
+                    <div class="social-media" id="facebook"></div>
+                    <div class="social-media" id="instagram"></div>
+                    <div class="social-media" id="youtube"></div>
+                </div>
+
+            </div>
+                
+        </div>
+
+    </footer>
+    <div id="copyright">
+        <p>Copyright &#169 2023 All right reserved by Dinesh Adhikari</p>
+
+    </div>
+
+</body>
+</html>
