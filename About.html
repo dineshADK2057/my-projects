@@ -5,8 +5,450 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
+    <link rel="stylesheet" href="./about.css">
 </head>
 <body>
+
+    <!-- header section -->
+    <header class="" id="header">
+        <section id="header-section">
+            <div id="logo">
+                <img src="./pictures/logowhite.png" alt="Logo" id="header-logo">
+            </div>
+
+            <nav class="nav-menu" id="nav-menu-header">
+                <li><a href="./Home.html" class="inactive-navmenu">Home</a></li>
+                <li><a href="./About.html" class="active-navmenu">About</a></li>
+                <li><a href="#" class="inactive-navmenu">Courses</a></li>
+                <li><a href="./Register-now.html" class="inactive-navmenu">Contact</a></li>
+            </nav>
+
+            <div class="header-button">
+                <button id="nav-button">Register Now</button>
+            </div>
+        </section>
+
+    </header>
+    <!-- on scroll glassmorphism effect -->
+    <script>
+        window.onscroll = function () { glassmorphism() };
+
+        function glassmorphism() {
+            if (document.documentElement.scrollTop >= 90) {
+                document.getElementById("header").className = "glassmorphism";
+            }
+            else {
+                document.getElementById("header").className = "";
+            }
+        }
+    </script>
+    <!-- header close -->
+
+    <!-- hero section -->
+    <section id="hero-section">
+        <h3>Who We Are</h3>
+        <p>Home  >   About us</p>
+
+    </section>
+    <!-- hero ends -->
+    <!-- about us -->
+    <section id="AboutUsMainCointainer">
+        <div id="main-div">
+            <div class="aboutImg">
+            
+            </div>
+            <div id="AboutContent">
+                <h4 class="subheading">About BMC</h4>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id dolorum exercitationem voluptates </h3>
+                <hr>
+                <p>A well-known higher education college in Nepal "Birendra Multiple Campus" is connected to Tribhuvan University. With more than 40 years of expertise, we offer a variety of programs in education, administration, science, and the humanities. Our faculty is committed to delivering academic achievement and is highly qualified, diverse, and experienced. We support a comprehensive education that encourages social responsibility and personal growth. We give our students access to cutting-edge facilities, a safe atmosphere to learn in, and a strong emphasis on extracurricular activities and community involvement. We appreciate you thinking of Birendra Multiple Campus for your higher education need.</p>
+            </div>
+        </div>
+    </section>
+    <!-- about us ends -->
+    <!-- mission and history -->
+    <section id="mission-section">    
+        <div id="first-mission-container">
+            <div id="first-mission-description">
+                <img src="./pictures/mission.svg" alt="mission-icon" id="mission-icon">
+                <div>
+                    <h2>Mission and History</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugiatfugit iste qui commodi nostrum libero? Eius ea iure esse mollitia aspernatur voluptate? Esseculpa animi amet voluptate? Quidem, optio.
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <img src="./pictures/file-20221213-18915-z6pe3e.jpg" alt="img" id="first-mission-img">
+        </div>        
+    </section>
+    <!-- mission and history -->
+
+    <!-- facilities section -->
+    <section id="facilitySection">
+        <h4>Find Your Desired IT Course</h4>
+        <h2>Our Facilities</h2>
+        <hr>
+        <div id="FacilityContainer">
+            
+            <div class="facilitiesInnerSection">
+                <div class="facilitiesColumn" id="first-column">
+                    <div class="facilities-icon">
+
+                    </div>
+                    <h4>Facilities Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolore saepe voluptate nemo, cupiditate aut enim inventore nisi hic placeat pariatur. Cumque maxime ipsam fugiat sint tenetur velit facilis debitis.
+                    </p>
+                </div>
+                <div class="facilitiesColumn" id="second-column">
+                    <div class="facilities-icon">
+
+                    </div>
+                    <h4>Facilities Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolore saepe voluptate nemo, cupiditate aut enim inventore nisi hic placeat pariatur. Cumque maxime ipsam fugiat sint tenetur velit facilis debitis.
+                    </p>
+                </div>
+                <div class="facilitiesColumn" id="third-column">
+                    <div class="facilities-icon">
+
+                    </div>
+                    <h4>Facilities Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolore saepe voluptate nemo, cupiditate aut enim inventore nisi hic placeat pariatur. Cumque maxime ipsam fugiat sint tenetur velit facilis debitis.
+                    </p>
+                </div>
+            </div>
+            <div class="facilitiesInnerSection">
+                <div class="facilitiesColumn" id="fourth-column">
+                    <div class="facilities-icon">
+
+                    </div>
+                    <h4>Facilities Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolore saepe voluptate nemo, cupiditate aut enim inventore nisi hic placeat pariatur. Cumque maxime ipsam fugiat sint tenetur velit facilis debitis.
+                    </p>
+                </div>
+                <div class="facilitiesColumn" id="fifth-column">
+                    <div class="facilities-icon">
+
+                    </div>
+                    <h4>Facilities Title</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolore saepe voluptate nemo, cupiditate aut enim inventore nisi hic placeat pariatur. Cumque maxime ipsam fugiat sint tenetur velit facilis debitis.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- facilities section ends -->
+
+    <!-- discovery wala section -->
+    <section id="discoverySection">
+        <div class="Discovery">            
+            <div class="discoveryContent">
+                <h3>Discovery and creativity go hand in hand.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, quaerat est. Corporis tempora assumenda ipsum fugit, excepturi quidem, laborum aliquid eum nulla vero earum qui molestias porro fugiat veniam obcaecati!</p>
+            </div>
+            <div class="discoveryIMG"></div>
+        </div>
+        <div class="Discovery">
+            <div class="discoveryIMG"></div>
+            <div class="discoveryContent">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quos eos ratione vero tenetur ipsa commodi magnam eligendi sunt numquam ipsum, dolor eius modi at enim eveniet earum dignissimos architecto.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- discovery wala section -->
+
+    <!-- History section -->
+
+
+    <!-- History section -->
+    <!-- words from campus chief -->
+    <section id="campuschief">
+        <div id="campusChiefWords">
+            <div id="wordsOfChief">
+                <h3>Words form Campus Chief</h3>
+                <p>
+                    Birendra Multiple Campus, a constituent campus of Tribhuvan University, aims to develop competent and innovative students who can excel globally. It faces challenges but is determined to become an academic hub with stakeholder support.
+                </p>
+                <p>Thanks</p>
+                <div>
+                    <h5>Prof. Dayaram Poudel</h5>
+                    <p>Campus Chief</p>
+                </div>
+            </div>
+            <div id="chiefIMG">
+
+            </div>
+        </div>
+        
+    </section>
+    <!-- words from campus chief -->
+
+    <!-- ------------------Testimonial Container------------------------------------------- -->
+    <section class="testimonial-container">
+            <h4>What Our Students Says About Us!!!</h4>
+            <h2>Testimonials</h2>
+            <!-- <hr> -->
+            <div id="testimonial">
+    
+                <div class="testi-container">
+                    <div id="relative-testicontent">
+                        <div class="testi-content" id="slide-container">
+                            <div class="slide swiper-slide">
+                                <img src="images/img1.jpg" alt="" id="testimonial-image" />
+                                <p class="paragaph">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                                    doloremque deserunt eum nemo.
+                                </p>
+                                <h4 id="testimonial-name">Full Name</h4>
+                                <p>Profession</p>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="images/img1.jpg" alt="" id="testimonial-image" />
+                                <p class="paragaph">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                                    doloremque deserunt eum nemo.
+                                </p>
+                                <h4 id="testimonial-name">Full Name</h4>
+                                <p>Profession</p>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="images/img1.jpg" alt="" id="testimonial-image" />
+                                <p class="paragaph">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                                    doloremque deserunt eum nemo.
+                                </p>
+                                <h4 id="testimonial-name">Full Name</h4>
+                                <p>Profession</p>
+                            </div>
+                            <div class="slide swiper-slide">
+                                <img src="images/img1.jpg" alt="" id="testimonial-image" />
+                                <p class="paragaph">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                                    doloremque deserunt eum nemo.
+                                </p>
+                                <h4 id="testimonial-name">Full Name</h4>
+                                <p>Profession</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-button-next nav-btn" onclick="increment()"> > </div>
+                <div class="swiper-button-prev nav-btn" onclick="decrement()"><</div>
+                    <div class="indicator">
+                        <span class="bth active"></span>
+                        <span class="bth"></span>
+                        <span class="bth"></span>
+                        <span class="bth"></span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <script>
+            const btn = document.getElementsByClassName("bth");
+            const slide = document.getElementById("slide-container");
+            let containerWidth = 0;
+            let a = 0;
+    
+            function btnActiveRemove(){
+                if (containerWidth >= -2100) {
+                    slide.style.transform = `translatex(${containerWidth}px)`;
+                    for (i = 0; i < 4; i++) {
+                        bth[i].classList.remove("active");
+                    }
+                }
+                else {
+                    containerWidth = 0;
+                    slide.style.transform = `translatex(${containerWidth}px)`;
+                    for (i = 0; i < 4; i++) {
+                        bth[i].classList.remove("active");
+                    }
+                }         
+            }
+    
+            btn[0].onclick = function () {
+                a=0;
+                containerWidth = 0;
+                btnActiveRemove();
+                bth[0].classList.add("active");
+            }
+            btn[1].onclick = function () {
+                a=1;
+                containerWidth = -700;
+                btnActiveRemove();
+                bth[1].classList.add("active")
+            }
+            btn[2].onclick = function () {
+                a=2;
+                containerWidth = -1400;
+                btnActiveRemove();
+                bth[2].classList.add("active")
+            }
+            btn[3].onclick = function () {
+                a=3;
+                containerWidth = -2100;
+                btnActiveRemove();
+                bth[3].classList.add("active")
+            }
+    
+            function increment() {
+                a++;
+                a = a % 4;
+                if (containerWidth >= -2100) {
+                    containerWidth = containerWidth - 700;                
+                    btnActiveRemove();
+                    bth[a].classList.add("active");
+                }
+                else {
+                    containerWidth = 0;                
+                    btnActiveRemove();
+                    bth[a].classList.add("active");
+                }
+            }
+            function decrement() {
+                if(a>0 || containerWidth < 0){
+                    a--;
+                    containerWidth = containerWidth + 700;
+                    btnActiveRemove();
+                    bth[a].classList.add("active");                
+                }
+                else{
+                    a=3;
+                    containerWidth = -2100;
+                    btnActiveRemove();
+                    bth[a].classList.add("active");
+                }
+            }
+    
+    </script>
+    
+    <!-- ----------------testimonial ends---------------------------------------------------- -->
+    
+    <!-- ---------------Contact Us section----------------------------------------------- -->
+    
+    <section id="contact-us">
+            <div id="main-contact-us-section">
+    
+                <div class="contact-columns" id="contact-us-column">
+                    <h4>CONTACT</h4>
+                    <h3>Get in Touch...</h3>
+    
+                    <p>We'd love to hear from you! To get in touch with us, please fill out our contact form. We'll get back
+                        to you as soon as possible.</p>
+                    <div class="info-subsection">
+                        <img src="./pictures/location.svg" alt="location-icon" class="icon">
+                        <p>Bharatpur-10, Chitwan, Bagmati, Nepal</p>
+                    </div>
+                    <div class="info-subsection">
+                        <img src="./pictures/envelop.svg" alt="email-icon" class="icon">
+                        <p>dnsadk90@gmial.com</p>
+                    </div>
+                    <div class="info-subsection">
+                        <img src="./pictures/call.svg" alt="phone-icon" class="icon">
+                        <p>+977 982-7158626</p>
+                    </div>
+    
+                </div>
+                <div class="contact-columns" id="form-column">
+                    <div class="input-container">
+                        <input type="text" name="name" id="name" class="form-field" placeholder="Enter your full name"
+                            required>
+                        <label for="name" class="label">Full Name</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" id="email" class="form-field" placeholder="example@gmail.coom"
+                            required>
+                        <label for="email" class="label">Email</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="subject" id="subject" class="form-field" placeholder="Enter your subject"
+                            required>
+                        <label for="subject" class="label">Subject</label>
+                    </div>
+    
+                    <div class="input-container">
+    
+                        <textarea name="Message" id="Message" cols="30" rows="2" class="form-field"
+                            placeholder="Enter your message" required></textarea>
+                        <label for="Message" class="label" id="message-label">Message</label>
+                    </div>
+                    <button>Send Message</button>
+                    <!-- class="button-in-blue-background" -->
+    
+                </div>
+                <div class="contact-columns" id="map-column">
+    
+                </div>
+    
+            </div>
+    
+    
+    </section>
+    <footer>
+        <div id="footer-section">
+
+            <img src="./pictures/LOGO.png" alt="Logo" id="footer-logo">
+
+            <div id="nav-column">
+                <h4>Quick Links</h4>
+                <nav class="nav-menu" id="nav-menu-footer">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </nav>
+
+            </div>
+
+            <div id="Useful-Links">
+                <h4>Some Useful Links</h4>
+                <nav class="nav-menu" id="nav-menu-footer">
+                    <li><a href="#">TUIOST</a></li>
+                    <li><a href="#">Birendra</a></li>
+                    <li><a href="#">CSIT</a></li>
+                </nav>
+
+            </div>
+
+            <div>
+                <h4>Contact Information</h4>
+                <div id="contact-column">
+                    <p>phn. no</p>
+                    <p>location</p>
+                </div>
+                <h4>Social Media Links</h4>
+                <div id="social-media-section">
+                    <div class="social-media" id="facebook"></div>
+                    <div class="social-media" id="instagram"></div>
+                    <div class="social-media" id="youtube"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <div id="copyright">
+        <p id="copyright-text">Copyright &#169 2023 | All right reserved by Dinesh Adhikari</p>
+
+    </div>
+
+
     
 </body>
 </html>

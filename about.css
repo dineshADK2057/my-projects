@@ -60,11 +60,10 @@ button:hover{
 hr{
     width: 200px;
     height: 3px;
-    margin-top: 20px;
+    margin-bottom: 20px;
     border: none;
     background-color: rgb(0,5,31);
 }
-
 .buttonWithOrangeBackground{
     background-color: #ffa100;
     border-color: #ffa100;
@@ -74,8 +73,14 @@ hr{
     background: #00051f;
     border-color: #00051f;
 }
-
-
+section{
+    padding-block: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* row-gap: 50px; */
+}
 /*-----------------------Header section--------------------------------*/
 header{
     display: flex;
@@ -91,22 +96,21 @@ header{
     backdrop-filter: saturate(180%) blur( 10px );
     -webkit-backdrop-filter: saturate(180%) blur( 10px );
 }
-
 #header-section{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 1000px;
     height: 70px;
     z-index: 10;
+    padding: 0;
 }
-
 /*------------for logo in the header-------------------------*/
 #header-logo{
     height: 70px;
     width: auto;
 }
-
 /*-------------------for nav menu---------------------------*/
 a{
     position: relative;
@@ -160,11 +164,9 @@ a{
 /*-----------------nav menu ends------------------------*/
 
 /*----------------------for nav button hover effect-------------------*/
-
 #nav-button{
     background-color: rgb(225, 225, 225);
 }
-
 #nav-button:hover{
     border: 2px solid rgb(255,161,0);
     background-color: rgb(255,161,0);
@@ -173,225 +175,210 @@ a{
     
 }
 /*-----------------Header Section ends-------------------------------*/
-
-/*------------------for hero section----------------------------*/
+/* -----------------hero section starts--------------- */
 #hero-section{
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    background: rgb(127, 114, 173);
+    height: 200px;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("./pictures/birendra.jpg");
     background-size: cover;
     background-position: center;
-    justify-content: center;
-    align-items: center;
+    row-gap: 20px;
     margin-top: -70px;
 }
-
-#hero-section-width{
-    width: 1000px;
-    display: flex;
-    flex-direction: row;
-}
-
-
-#hero-section h1, #hero-section p{
+#hero-section h3, #hero-section p{
     color: white;
-    margin: 10px 0px;
-
 }
-#hero-button1{    
-    margin-right: 20px;
-}
+/* -------------hero section ends----------------- */
 
-
-/*-----------------hero section ends------------------------------*/
-/*-------about us section-------------------*/
-#about-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* ----------about us secction starts---------------- */
+#AboutUsMainCointainer{
     background-color: rgb(240, 240, 240);
-    
-}
-#facilities-section{
+    padding-block: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 30px;
+}
+#main-div{
     width: 1000px;
-    margin-top: -50px;
-    margin-bottom: 200px;      
-    background-color: white;
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-    padding: 40px 0;
-    animation: facilities 1.5s ease-in 0s 1 normal none;
-}
-
-@keyframes facilities{
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
-
-.facilities-items{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid #ffa100;
-    width: 20%;
-    padding: 0 20px;
+    column-gap: 50px;
 }
-#last-facilities{
-    border: none;
-}
-.facilities-icon{
-    height: 40px;
-    width: 40px;
-}
-.facilities-title, .facilities-icon{
-    margin-bottom: 20px;
-    font-weight: 700px;
-    letter-spacing: normal;
-}
-/*----------------------about us section------------------------------*/
-#about-us{
-    display: flex;
-    flex-direction: column;
-    width: 1000px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 250px;
-}
-#about-image{
-    width: 35%;
-    height: 200px;
-    float: left;
-    margin: -30px 50px 50px 0;
+.aboutImg{
     background-color: black;
+    border-radius: 24px;
+    width: 40%;
 }
-#about-sub-title{
-    margin: 10px 0;
-    font-size: 20px;
+#AboutContent{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    row-gap: 10px;
+    width: 60%;
 }
-#about-us-paragraph{
-    margin-top: 20px;
-}
+/* ---------------about us ends-------------------- */
 
-
-/*--------------------our mission---------------------------------*/
+/* -----------mission and Vision-------------- */
 #mission-section{
-    width: 1000px;
-    padding-bottom: 120px;
+    padding-block: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
 }
-
-
 #first-mission-container{
     display: flex;
     flex-direction: row;
-
-    margin-bottom: 50px;
+    align-items: center;
+    width: 1000px;
+    column-gap: 50px;
 }
 #first-mission-description{
-    margin-right: 80px;
     display: flex;
+    column-gap: 30px;
 }
 #mission-icon{
-    height: 100px;
-    width: 100px;
-    margin-right: 40px;
+    height: 80px;
+    width: 80px;
 }
 #first-mission-img{
-    width: 35%;
+    width: 40%;
     border-radius: 24px;
-    margin-top: -50px;
 }
-#last-mission-container{
-    display: flex;
-    justify-content: center;
-}
-#last-mission-img{
-    width: 35%;
-    border-radius: 24px;
-    background-color: black;
-    margin: -80px 50px 0 0;
-}
+/* -----------mission and Vision ends-------------- */
 
-#mission-symbol{
-    margin: -80px 50px 30px 0;
-    width: 100px;
-    height: 100px;
-
-}
-/*------------------------featured courses------------------------------------------*/
-#programs{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 120px 0;
+/* -------------facilities section----------------------- */
+#facilitySection{
     background-color: #ffa100;
+    padding-block: 150px;
+    row-gap: 10px;
+    /* height: 200px; */
 }
-
-#courses{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1050px;
-    margin-top: 50px;
-    column-gap: 30px;
-    /* animation: courses 1s ease-in 0s normal none; */
-}
-
-@keyframes courses {
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }    
-}
-.course-contianer{
+#FacilityContainer{
+    /* width: 1000px; */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+.facilitiesInnerSection{
+    display: flex;
+    column-gap: 30px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+.facilitiesColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     row-gap: 20px;
-    padding: 24px 15px;
-    width: 25%;
-    background-color: white;
+    padding: 50px 30px;
+    width: 33.33%;
     border-radius: 24px;
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+    /* height: 150px; */
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.4);
+    background-color: white;
 }
-
-
-.course-title{
-    font-weight: 700px;
-    letter-spacing: normal;
-}
-.paragaph{
-    line-height: normal;
+.facilitiesColumn p{
     text-align: center;
 }
-.course-button{
-    margin-top: 10px;
-    padding: 12px;
-    margin-bottom: -44px;
-    background-color: rgb(0,5,31);
+.facilities-icon{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+#first-column{
+    background-color: #00051f;
+    box-shadow: none;
+}
+#first-column h4{
     color: white;
-    border-radius: 35px;
 }
-.course-button:hover{
-    padding: 12px 24px;
-    transition: 0.5s;
+#first-column p{
+    color: #e0e0e0;
 }
-.course-button:hover::before{
-    content: "Read More";
-    margin-right: 10px;
+/* -------------facilities section ends----------------------- */
+
+/*-------------------------------- discovery wala section start --------------------------------*/
+#discoverySection{
+    background-color: rgb(240, 240, 240);
+    row-gap: 0;
 }
+.Discovery{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+.discoveryContent{
+    width: 50%;
+}
+.discoveryIMG{
+    width: 50%;
+    height: 400px;
+    background-color: black;
+    border-radius: 24px;
+}
+/*--------------------------- discovery wala section ends--------------------------------------- */
+
+/* ----------------words from campus chief-------------- */
+#campuschief{
+    background-color: #00051f;
+    /* padding: 0; */
+    height: 500px;
+    flex-direction: row;
+}
+#campusChiefWords{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wordsOfChief{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffa100;
+    width: 60%;
+    margin-right: -150px;
+    border-radius: 24px;
+    z-index: 1;
+    padding: 50px 50px 50px 30px;
+    row-gap: 10px;
+}
+#chiefIMG{
+    background-color: white;
+    width: 40%;
+    /* height: 350px; */
+    /* border-radius: 24px; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    
+    border-left: 150px solid #00051f;
+    border-bottom: 450px solid transparent;
+    
+}
+/* #chiefIMG:before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -6.1em;
+    transform: translateY(50%) rotate(20deg);
+    width: 40%;
+    height: 140%;
+} */
+/* ----------------words from campus chief ends-------------- */
 
 /* ------------------------testimonial section------------------------------ */
 .testimonial-container{
@@ -481,13 +468,11 @@ a{
     border-radius: 15px;
     background-color: rgb(0,5,31);
     margin: 0 5px;
-    cursor: pointer;
     transition: all 0.5s linear;
+    cursor: pointer;
 }
-
 .active{
     width: 45px;
-    
 }
 
 /* swiper button css */
@@ -523,14 +508,6 @@ a{
     top: 50%;
     right: -100px;
 }
-
-/*
-.swiper-pagination-bullet {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.swiper-pagination-bullet-active {
-    background-color: #4070f4;
-} */
 
 /* ------------------------------Contact Us------------------------------- */
 #contact-us{

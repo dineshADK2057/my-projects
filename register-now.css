@@ -61,8 +61,8 @@ a{
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
+    /* color: #ffa100; */
 }
-
 #nav-menu-header {
     display: flex;
     justify-content: space-around;
@@ -72,13 +72,11 @@ a{
     border-radius: 0 0 24px 24px;
     width: 50%;
 }
-
-
-#nav-menu-header li a{
-    color: white;
+.inactive-navmenu{
+    color: rgb(255, 255, 255);
     padding: 0 8px;
 }
-#nav-menu-header li a:after{
+.inactive-navmenu:after{
     content: "";
     position: absolute;
     background-color: #ffa100;
@@ -89,11 +87,22 @@ a{
     /*transform: scale(0, 1);
     transition: transform 0.3s ease;*/
 }
-
-#nav-menu-header li a:hover:after{
+.inactive-navmenu:hover:after{
     width: 100%;
     transition: 0.3s;
     /*transform: scale(1, 1);*/
+}
+.active-navmenu{
+    color: #ffa100;
+}
+.active-navmenu:after{
+    content: "";
+    position: absolute;
+    background-color: #ffa100;
+    height: 3px;
+    width: 100%; 
+    left: 0;
+    bottom: -8px;
 }
 /*-----------------nav menu ends------------------------*/
 
@@ -121,10 +130,10 @@ a{
     height: 400px;
     background: 
         linear-gradient(
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
         ),
-        url("./pictures/birendra.jpg");
+        url("./pictures/register-hero.jpg");
     background-size: cover;
     background-position: center;
     justify-content: center;
